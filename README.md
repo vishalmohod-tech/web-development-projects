@@ -5,6 +5,9 @@ This repository reflects my journey of consistent learning, building, and explor
 
 I am passionate about improving daily, experimenting with new ideas, and building projects that not only strengthen my skills but also add value to the web.
 
+ I’ve already completed <strong>Day 1–27</strong> of my journey, where I explored the fundamentals of web development (HTML, CSS, and core concepts). <strong> <a href="https://vishalmohod-tech.github.io/learns-webdev/" target="_blank">(Click Here for Day 1 to Day 27..)</a> </strong>
+         From <strong>Day 28 onwards</strong>, I have entered the <strong>Projects Phase</strong>, where  I focus on building practical, real-world projects that strengthen my frontend skills and prepare me for full-stack development. With this new phase, we continue from <strong>Day 28.</strong>
+
 🚀 Goals of This Repository
 
 ✅ Practice and apply core web technologies
