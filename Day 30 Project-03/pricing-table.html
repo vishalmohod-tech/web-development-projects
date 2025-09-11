@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing plans</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: aliceblue;
+        font-family:  sans-serif;
+      }
+      header{
+        background-color: rgb(54, 113, 148);
+        text-align: center;
+       padding: 10px;
+       margin: 20px;
+       border-radius: 10px;
+       color: white;
+      }
+         .container{
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+         }
+         .box{
+            border: 1px solid rgb(197, 187, 187);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 2.5em;
+            background-color: white;
+            
+         }
+         h2{
+            text-align: center;
+            
+         }
+         .price{
+            text-align: center;
+           
+            color: rgb(43, 43, 226);
+            
+            margin: 0.5rem;
+             font-size: 2rem;
+             font-weight: bold;
+            
+         }
+    
+   
+    ul{
+        list-style: none;
+        padding-inline-start: 2px;
+        text-align: left;
+
+    }
+    .btn{
+        background-color: rgb(37, 37, 185);
+        color: white;
+        /* font-size: bold; */
+        border-radius: 10px;
+        padding: 0.5rem;
+        font-size: 0.95rem;
+      font-weight: bold;
+      border: none;
+      transition: ease-in-out;
+    }
+       footer {
+      margin-top: 2rem;
+      text-align: center;
+      padding: 1rem;
+      background: #f1f5f9;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+    .box:hover{
+        transform:scale(1.05);
+    }
+    .btn:hover{
+        transform:scale(1.05);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Pricing Plans</h1>
+        <p>Choose the plan that fits your needs best</p>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h2>Basic</h2>
+            <p class="price"> ₹ 499/mo </p>
+           
+                <ul>                    
+                    <li>✔️ 5 Projects </li>
+                    <li>✔️ Email Support</li>
+                    <li>❌ Custom Domain</li>
+                    <li>❌ Advance Features</li>
+                </ul>
+            
+            <button class="btn">Choose Basic</button>
+        </div>
+        <div class="box">
+            <h2>Standard</h2>
+            <p class="price"> ₹ 999/mo </p>
+            
+                <ul>
+                    <li>✔️ 20 Projects </li>
+                    <li>✔️ Priority Support</li>
+                    <li>✔️ Custom Domain</li>
+                    <li>✔️ Advance Features</li>
+                </ul>
+            
+            <button class="btn">Choose Standard</button>
+         </div>
+        <div class="box">
+            <h2>Premium</h2>
+            <p class="price">₹ 1,999/mo</p>
+            
+                <ul>
+                    <li>✔️ Unlimited Projects </li>
+                    <li>✔️ 24/7 Support</li>
+                    <li>✔️ Custom Domain<li>
+                    <li>✔️ All Features</li>
+                </ul>
+           
+            <button class="btn">Choose Premium</button>
+        </div>
+    </div>
+    <footer>Made with ❤️ by Vishal-tech</footer>
+</body>
+</html>
