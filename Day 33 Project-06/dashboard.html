@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(201, 209, 214);
+        }
+        .container{
+            display: flex;
+        }
+        aside{
+            background-color: rgb(25, 95, 141);
+            display: inline-block;
+            padding: 2rem;
+            color: white;
+            width: 20vw;
+            height: 100vh;
+        }
+        .header{
+            background-color: white;
+            margin: 1.5em 0;
+            padding: 0 1.5em;
+            min-width: 80vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+       ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 15px 0;
+    }
+
+    li:hover{
+      color: yellow;
+      font-weight: bold;      
+    }
+
+ 
+
+        .cards{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .card p {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2f3e9e;
+    }
+    .performance{
+       background-color: white;
+            margin: 1.5em 0;
+            padding: 0 1.5em 1.5em;
+            min-width: 80vw;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    .box{
+      border: 2px dotted black;
+      border-radius: 10px;
+      text-align: center;
+      padding: 5em;
+      background-color: #c2ebc5;
+    }
+     footer{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+       }
+  footer a{
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+    <div class="container">
+        <aside> 
+            <h2>Vishal-tech</h2>
+            <ul>
+                <li>Home</li>
+                <li>Analytics</li>
+                <li>Projects</li>
+                <li>Settings</li>
+                <li>Contact US</li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="header">
+                <h3>Dashboard Overview</h3>
+                <p>Welcome Back, Vishal 👋</p>
+            </div>
+
+      <div class="cards">
+       <div class="card">
+        <h3>Users</h3>
+        <p>1,245</p>
+      </div>
+      <div class="card">
+        <h3>Sales</h3>
+        <p>₹56K</p>
+      </div>
+      <div class="card">
+        <h3>Projects</h3>
+        <p>32</p>
+      </div>
+      <div class="card">
+        <h3>Revenue</h3>
+        <p>₹1.2M</p>
+      </div>
+    </div>
+    <div class="performance">
+      <h2>Performance Overview</h2>
+      <div class="box">Show Performance</div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div>Designed & Developed by Vishal-tech ✨</div>
+  🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+
+
+</body>
+</html>
