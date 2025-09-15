@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us Page UI</title>
+    <style>
+        body{
+            background: linear-gradient(135deg, rgb(32, 103, 131), rgb(187, 39, 201));
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .m-container{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+        }
+        .container{
+            background-color: aliceblue;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            
+            border-radius: 10px;
+            max-width: 60%;
+            overflow: hidden;
+        }
+        .box{
+                margin: 1.5em;
+                
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            margin: 1.5em 0;
+            
+        }
+        .box1{         
+          background-color: rgb(17, 72, 94);
+          color: white;
+          border-radius: 10px;
+          margin: 2em;
+          padding: 2rem;
+        }
+        .group{
+            margin-bottom: 1.5rem ;
+        }
+      .group label, b{
+        display: block;
+        font-weight: bold;
+      }
+
+      .group input, .group textarea{
+      width: 90%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+      }
+      .group input:focus,
+    .group textarea:focus {
+      border-color: #4facfe;
+      box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+    }
+
+      .btn{
+        background-color: rgb(28, 85, 189);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        width: 90%;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 0;
+        margin-top: 1.5em;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+      .btn:hover{
+        background-color: rgb(29, 134, 76);
+      }
+       @media (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .box {
+        padding: 30px;
+      }
+    }
+       footer{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+       }
+  footer a{
+    text-decoration: none;
+  }
+    </style>
+</head>
+<body>
+    <div class="m-container">
+    <div class="container">
+        <div class="box box1">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>
+                    <b>📞Phone:</b> +91 9876543210
+                </li>
+                <li>
+                    <b>📧 Email:</b> contact@vishal-tech.gmail
+                </li>
+                <li>
+                    <b>📍Address:</b> Nagpur, Maharashtra, India
+                </li>
+                <li>
+                    We're here to help! Whether you have a question, feedback, or need support, our team is ready to assist.
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Contact us</h2>
+            <div class="group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="group">
+                <label for="mail">Email Address:</label>
+                <input type="email" id="mail" placeholder="Enter your email">
+            </div>
+            <div class="group">
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Type your message......." required></textarea>
+            </div>
+            <button class="btn">Send Message</button>
+        </div>
+    </div>
+    </div>
+    <footer>
+  <div>Designed & Developed by Vishal-tech ✨</div>
+  🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+</body>
+</html>
