@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Habit Tracker UI</title>
+    <style>
+        body{
+            background: linear-gradient(135deg,#e6b3d7,#8eacdf);
+            font-family: sans-serif;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+           
+        }
+        .box{
+            text-align: center;
+            padding: 20px;
+            background-color: white ;
+            box-shadow:0 8px 20px rgba(0,0,0,0.4);
+            border-radius: 20px;
+            max-width: 100%;
+        }
+        .todo{
+            font-weight: bold;
+            color: rgb(68, 53, 53);
+        }
+        .days{
+            display: flex;
+            justify-content: center;
+           gap: 30px;
+            padding: 10px ;
+            margin-bottom: 20px;
+        }
+        h1{
+            color: #1e62ce;
+        }
+        .day{
+           width:40px;
+    height:40px;
+    border-radius:50%;
+    background: #bdb9a5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: white ;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+        }
+        .complete{
+    background: linear-gradient(135deg,#4ade80,#3b82f6);
+  }
+  .day:hover{
+    transform: scale(1.2);
+  }
+         footer{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        background-color: rgb(65, 123, 131);
+       }
+  footer a{
+    text-decoration: none;
+    color: antiquewhite;
+  }
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Daily Habit Tracker</h1>
+            <div class="todo">EXERCISE</div>
+            <div class="days">
+                <div class="day complete">M</div>
+                <div class="day">T</div>
+                <div class="day">W</div>
+                <div class="day">T</div>
+                <div class="day complete">F</div>
+                <div class="day complete">S</div>
+                <div class="day">S</div>
+            </div>
+            <div class="todo">READING</div>
+            <div class="days">
+                <div class="day complete">M</div>
+                <div class="day">T</div>
+                <div class="day">W</div>
+                <div class="day complete">T</div>
+                <div class="day">F</div>
+                <div class="day">S</div>
+                <div class="day complete">S</div>
+            </div>
+            <div class="todo">PROJECT WORK</div>
+            <div class="days">
+                <div class="day ">M</div>
+                <div class="day complete">T</div>
+                <div class="day complete">W</div>
+                <div class="day ">T</div>
+                <div class="day complete">F</div>
+                <div class="day complete">S</div>
+                <div class="day ">S</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+</body>
+</html>
