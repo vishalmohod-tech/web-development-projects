@@ -49,7 +49,7 @@ Each project is a step forward in my goal of becoming a professional full stack 
 
 🗂 GitHub Profile :  https://github.com/vishalmohod-tech
 
-💻 Portfolio (Coming Soon)
+💻 Portfolio (Coming Soon )
 
 
  One project. One day. One step closer to becoming a full-stack developer. 💪
