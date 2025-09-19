@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator UI</title>
+    <style>
+        body{
+        background: linear-gradient(90deg, rgb(43, 150, 141), rgba(172, 16, 164, 0.808),rgba(53, 173, 83, 0.24));
+        font-family: sans-serif;
+        }
+        h1{
+        text-align: center;
+        }
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    }
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgb(197, 83, 197) , rgb(138, 231, 115));
+    gap: 40px;
+    font-size: 15px;
+    color: rgb(32, 27, 27);
+    font-weight: bold;
+  }
+        .group{
+            display:flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .btn{
+            width: 90%;
+            border: none;
+            background-color: rgba(45, 136, 53, 0.829);
+            color: antiquewhite;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        input{
+            background-color: rgb(149, 236, 193);
+            border: none;
+            font-weight: bold;
+        }
+        .gender{
+            margin-bottom: 10px;
+        }
+        .right{
+            text-align: center;
+        }
+        .result{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .status{
+        padding: 10px 20px;
+        border-radius: 12px;
+        background: #667eea;
+        /* color: white; */
+        font-weight: bold;
+        text-transform: uppercase;
+        }
+        footer{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        background-color: rgb(65, 123, 131);
+        }
+        footer a{
+        text-decoration: none;
+        color: antiquewhite;
+        }
+</style>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div class="container">
+        <div class="box">
+            <div class="left">
+                <h3>BMI Calculator</h3>
+
+                <div class="gender">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+
+                </div>
+                <div class="group">
+                    <label for="weight">Weight (in kg):</label>
+                    <input type="number" id="weight" name="weight" placeholder="Enter Your weight">
+                </div>
+                <div class="group">
+                    <label for="height">Height (in cm):</label>
+                    <input type="number" id="height" name="height" placeholder="Enter Your height">
+                </div>
+                <div class="group">
+                    <label for="age">Age (in yr):</label>
+                    <input type="number" id="age" name="age" placeholder="Enter Your age">
+                </div>
+
+                <button class="btn">Calculate BMI</button>
+            </div>
+            <div class="right">
+                <h2>Your BMI</h2>
+                <div class="result"> 22 </div>
+                <div class="status"> Healthy</div>
+            </div>
+        </div>
+    </div>
+     <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+
+</body>
+</html>
