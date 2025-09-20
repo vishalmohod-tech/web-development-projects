@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor UI</title>
+    <style>
+        body{
+           background:linear-gradient(145deg,rgb(43, 35, 35),rgb(29, 54, 50));
+           font-family:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 80vh; */
+            flex-wrap: wrap;
+        }
+        .f-box{
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid grey;
+             box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+             color: white;
+             width: 600px;
+             background-color: rgb(39, 54, 53);
+             margin: 80px 0;
+        }
+        .ff-box{
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid grey;
+             box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+             color: white;
+             width: 200px;
+             background-color: rgb(39, 54, 53);
+             margin: 20px;
+        }
+        .f-box p{
+            color: rgb(158, 154, 154);
+            margin-top: 0;
+        }
+        .sec-box{
+            border: 2px solid rgb(60, 74, 75);
+            border-radius: 20px;
+            padding: 20px;
+            background-color: rgb(41, 54, 48);
+        }
+        label{
+            color: rgb(185, 185, 185); ;
+            margin-bottom: 5px;
+        }
+        input, select{
+            padding: 5px ;
+            border-radius: 5px;
+            border: 2px solid grey;
+            font-weight: bold;
+            margin-bottom: 15px;
+            background-color: rgb(54, 44, 54);
+            color: white;
+        }
+        .btn2{
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid grey;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: rgb(61, 212, 212);
+        }
+        .btn{
+           background-color: rgb(41, 54, 48);
+            font-size: 30px;
+            margin-top: 2px;
+            border: none;
+        }        
+        footer{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        background-color: rgb(65, 123, 131);
+       }
+  footer a{
+    text-decoration: none;
+    color: antiquewhite;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="f-box">
+            <h2>Currency Converter UI</h2>
+                 <p>
+                     Beautiful, responsive UI for a currency converter. This is a static design (HTML + internal CSS). Replace with your own conversion logic (JS or server) later — for now it looks like a finished product.
+                 </p>
+
+                 <div class="sec-box">
+                    <label style="display: block;" for="amount">Amount</label>
+                    <input  type="number" name="amount" id="amount" placeholder="Enter amount">
+                    
+                    <div class="country">
+                              <label for="country">From:</label>
+                                 <select name="country" id="country">
+                                       <option value="USD">USD — United States Dollar</option>
+                <option value="EUR">EUR — Euro</option>
+                <option value="INR">INR — Indian Rupee</option>
+                <option value="GBP">GBP — British Pound</option>
+                <option value="JPY">JPY — Japanese Yen</option>
+                <option value="AUD">AUD — Australian Dollar</option>
+                                     </select>
+                                 <button class="btn"> 🔁 </button>
+
+                                 <label for="country">To:</label>
+                             <select name="country" id="country">
+                                 <option value="INR">INR — Indian Rupee</option>
+                                  <option value="USD">USD — United States Dollar</option>
+                <option value="EUR">EUR — Euro</option>
+                <option value="GBP">GBP — British Pound</option>
+                <option value="JPY">JPY — Japanese Yen</option>
+                <option value="AUD">AUD — Australian Dollar</option>
+                                 </select>
+                       </div>
+                       <div> 
+                        <button class="btn2" type="submit">Convert</button>
+                        <button class="btn2" type="reset">Reset</button>
+                    </div>
+                 </div>
+                </div>
+                <div class="ff-box">
+          <h2>USD → INR</h2>
+           <div class="sec-box">
+           </div>
+          </div>
+    </div>
+      <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+</body>
+</html>
