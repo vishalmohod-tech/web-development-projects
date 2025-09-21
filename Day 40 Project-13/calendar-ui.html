@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar UI</title>
+    <style>
+        body{
+             background-color: grey;
+        }
+        .container{
+           margin: 20px;
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        .calender{
+            width: 600px;
+            background-color: white;
+           padding: 20px;
+           border-radius: 10px;
+            font-weight: bold;    
+        }
+        .first{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        .days, .dates{
+             display: grid;
+            grid-template-columns: repeat(7,1fr);
+            justify-content: center;
+            border-radius: 10px;
+           padding: 10px;
+           text-align: center;
+           align-items: center;
+        }
+        .days{
+           background-color: rgb(131, 158, 177);
+               
+        }
+        .symbol{
+            padding: 7px 10px;
+            background-color: rgb(104, 104, 223);
+            border-radius: 5px;
+        }
+        .date{
+          padding: 20px;
+          background-color: rgb(186, 196, 196);
+          border-radius: 20px;
+          margin: 4px;
+          
+        }
+        .event{
+             /* border-bottom: 7px solid rgb(13, 202, 13) ; */
+             border: 5px solid red;
+        }
+                .today{
+            background-color: rgb(52, 96, 189);
+            color: white;
+        }
+
+        .date:hover{
+            transform: scale(1.08);
+        }
+           footer{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        background-color: rgb(65, 123, 131);
+       }
+  footer a{
+    text-decoration: none;
+    color: antiquewhite;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calender">
+            <div class="first">
+                <div class="symbol">&lt;</div>
+                <div class="month">September 2025</div>
+                <div class="symbol">&gt;</div>
+            </div>
+            <div class="days">
+                <div class="day">Sun</div>
+                <div class="day">Mon</div>
+                <div class="day">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day">Thu</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+            </div>
+            <div class="dates">
+                <div class="date">1</div>
+                <div class="date">2</div>
+                <div class="date">3</div>
+                <div class="date">4</div>
+                <div class="date event">5</div>
+                <div class="date">6</div>
+                <div class="date">7</div>
+                <div class="date">8</div>
+                <div class="date">9</div>
+                <div class="date">10</div>
+                <div class="date">11</div>
+                <div class="date">12</div>
+                <div class="date">13</div>
+                <div class="date">14</div>
+                <div class="date">15</div>
+                <div class="date">16</div>
+                <div class="date">17</div>
+                <div class="date">18</div>
+                <div class="date">19</div>
+                <div class="date today event">20</div>
+                <div class="date">21</div>
+                <div class="date event">22</div>
+                <div class="date">23</div>
+                <div class="date">24</div>
+                <div class="date">25</div>
+                <div class="date">26</div>
+                <div class="date">27</div>
+                <div class="date">28</div>
+                <div class="date">29</div>
+                <div class="date">30</div>
+            </div>
+        </div>
+    </div>
+     <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+</body>
+</html>
