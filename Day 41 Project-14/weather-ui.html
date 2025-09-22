@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather UI</title>
+    <style>
+        .container{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            
+            background-color: rgb(56, 120, 192);
+            
+           
+            border-radius: 20px;
+            text-align: center;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+        .weather{
+           
+            background-color: rgb(35, 50, 134);
+            padding: 20px;
+            margin: 40px;
+            border-radius: 20px;
+        }
+        .first{
+            border-radius: 20px;
+            border: none;
+            padding: 15px;
+            font-size: 15px;
+        }
+        .one{
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        .parts{
+            display: flex;
+            justify-content: space-between;
+        }
+        .part{
+            width: 100px;
+            background-color: rgb(84, 90, 128);
+            margin: 5px;
+           border-radius: 20px;
+           padding: 10px;
+           
+        }
+        .days{
+            display: flex;
+            background-color:rgb(84, 90, 128);
+            border-radius: 20px;
+            margin: 10px 0;
+            padding: 0 10px;
+            justify-content: space-between;
+        }
+        h1{
+            font-weight: 1000;
+            font-size: 60px;
+            margin: 0;
+        }
+        h2{
+            margin: 2px;
+        }
+        
+        .part h3, .part p{
+            margin: 0;
+        }
+       p{
+        font-weight: lighter;
+       }
+       .day{
+        margin-top: 30px;
+        text-align: left;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="weather">
+    
+    <div>
+        <div class="one">
+            <input class="first" type="search" id="search" placeholder="Enter Your city">
+            <button class="first btn">Search</button>
+        </div>
+    
+   
+        <h2>Nagpur, IN</h2>
+        <div>Sunday, 14 September 2025</div>
+        <h1>21°C</h1>
+        <div>☀️ Sunny</div>
+         <div class="parts">
+        <div class="part">
+          <h3>12 km/h</h3>
+          <p>Wind</p>
+        </div>
+        <div class="part">
+          <h3>65%</h3>
+          <p>Humidity</p>
+        </div>
+        <div class="part">
+          <h3>1012 hPa</h3>
+          <p>Pressure</p>
+        </div>
+      </div>
+        <div class="day"> 5-Days Forecast
+            
+            <div class="days">
+                <p>Mon </p> 
+                <p> ⛅ Cloudy</p> 
+                <p> 28°C</p> 
+            </div>
+ 
+            <div class="days">
+                <p>Tue </p> 
+                <p> 🌧️ Rain</p> 
+                <p> 26°C</p> 
+            </div>
+            <div class="days">
+                <p>Wed </p> 
+                <p> ☀️ Sunny</p> 
+                <p> 30°C</p> 
+            </div>
+            <div class="days">
+                <p>Thu </p> 
+                <p> 🌤️ Partly</p> 
+                <p> 27°C</p> 
+            </div>
+            <div class="days">
+                <p>Fri </p> 
+                <p> ⛈️ Storm</p> 
+                <p> 25°C</p> 
+            </div>
+            
+          
+               
+           
+            
+            
+        
+    </div>
+            </div > 
+        
+    </div>
+    </div>
+</body>
+</html>
