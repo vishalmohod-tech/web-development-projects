@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble To-Do List UI</title>
+  <style>
+    :root {
+      
+     
+     
+      
+      font-family: "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(135deg,#fbc2eb,#a6c1ee);
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .todo-list {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .task {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      border-radius: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      color: #0f172a;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+  
+    .task:nth-child(1) { background: #fef08a; transform: translateX(0); }
+    .task:nth-child(2) { background: #fca5a5; transform: translateX(20px); }
+    .task:nth-child(3) { background:  #6ee7b7; transform: translateX(-20px); }
+    .task:nth-child(4) { background: #93c5fd; transform: translateX(10px); }
+    .task:hover { transform: scale(1.05); }
+
+    .task span { flex:1; }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+    }
+    .actions button {
+      border: none;
+      background: transparent;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .actions button:hover {
+      transform: scale(1.2);
+    }
+
+    /* Floating Add Button */
+    .add-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background: #4f46e5;;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: 0.2s;
+    }
+    .add-btn:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>🌈 Bubble To-Do List</h1>
+    <div class="todo-list">
+      <div class="task">
+        <span>Finish UI Project</span>
+        <div class="actions">
+          <button>✏️</button>
+          <button>🗑️</button>
+        </div>
+      </div>
+      <div class="task">
+        <span>Buy Groceries</span>
+        <div class="actions">
+          <button>✏️</button>
+          <button>🗑️</button>
+        </div>
+      </div>
+      <div class="task">
+        <span>Workout at 6 PM</span>
+        <div class="actions">
+          <button>✏️</button>
+          <button>🗑️</button>
+        </div>
+      </div>
+      <div class="task">
+        <span>Plan Weekend Trip</span>
+        <div class="actions">
+          <button>✏️</button>
+          <button>🗑️</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="add-btn">+</div>
+</body>
+</html>
