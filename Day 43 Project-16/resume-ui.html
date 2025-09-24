@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <style>
+   .container{
+    
+    min-height: 100vh;
+    background: linear-gradient(145deg, #47bbb1, #772569);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   .resume , .preview{
+      background: #f8f4f4;
+    padding: 30px 40px;
+    border-radius:20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
+    .opt1{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    span{
+       flex: 1;
+    text-align: center;
+    position: relative;
+    font-weight: 650;
+    color: #8895af;
+    margin-right: 20px ;
+
+    }
+    .select, h3{
+      color: blue;
+    }
+    h1{
+      text-align: center ;
+    } 
+    .card{
+      width: 100%;
+    padding: 20px;
+    border-radius: var(--radius);
+    border: 1px dashed #d1d5db;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .preview{
+       flex: 1;
+    background: #fcf8f8;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 1360px ;
+
+    }
+      label {
+    display: block;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 6px;
+  }
+
+  input,textarea {
+    width: 90%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #91969c;
+    font-size: 16px;
+    transition: 0.3s;
+    background: rgb(238, 238, 247);
+    margin-bottom: 10px;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color:black;
+    box-shadow: 0 0 10px rgba(99,102,241,0.2);
+  }
+
+  textarea {
+    resize: none;
+    min-height: 100px;
+  }
+  button{
+       background: rgb(43, 43, 172);
+    color: #e4e3e3;
+    padding: 16px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+    @media(max-width:700px){
+    .container {
+      flex-direction: column;
+      
+    }
+  }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="resume">
+      <h1>Resume Builder</h1>
+      <div class="opt">
+        <span class="select">Personal</span>
+        <span>Education</span>
+        <span>Experience</span>
+        <span>Skills</span>
+      </div>
+
+      <div class="opt1">
+        <h3>Personal Information</h3>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="mail">Email</label>
+        <input type="email" name="email" id="email" placeholder="xyz@gmail.com">
+
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" placeholder="+91 9876543210">
+        </div>
+      <div class="opt1">
+
+        <h3>Education</h3>
+        <label for="degree">Degree</label>
+        <input type="text" id="degree" name="degree" placeholder="MCA / MBA / etc.">
+
+        <label for="University">EUniversity</label>
+        <input type="text" name="University" id="University" placeholder="ABC University">
+
+        <label for="year">Year of Graduation</label>
+        <input type="text" name="year" id="year" placeholder="2025">
+        </div>
+      <div class="opt1">
+        <h3>Experience</h3>
+        <label for="Company">Company</label>
+        <input type="text" id="Company" name="Company" placeholder="ABC Pvt Ltd">
+
+        <label for="role">Role/Position</label>
+        <input type="text" name="role" id="role" placeholder="Frontend Developer">
+
+        <label for="Duration">Duration</label>
+        <input type="text" name="Duration" id="Duration" placeholder="Jan 2024 - Aug 2025">
+        </div>
+      <div class="opt1">
+        <h3>Skills</h3>
+         <label for="skills">Your Skills</label>
+          <textarea id="skills" placeholder="HTML, CSS, JavaScript..."></textarea>
+
+      </div>
+      <button>Preview Resume </button>
+    </div>
+
+    
+    <div class="preview">
+      <h1>Resume Preview</h1>
+      <div class="card">
+         Your resume will appear here (UI only)
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
