@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart UI</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <h1>🛒 Your Shopping Cart</h1>
+    </header>
+
+    <div class="container">
+        
+        <div class="items">
+            <h2>Items in Cart (2)</h2>
+
+            <div class="item">
+                <div class="item-image">Image Here</div>
+                <div class="details">
+                    <h3>Premium Wireless Headphones</h3>
+                    <p>Color: Black | Model: X-2000</p>
+                    <p class="price"> ₹1,999.00 </p>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="1" readonly>
+                    <button>+</button>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+
+            <div class="item">
+                <div class="item-image">Image Here</div>
+                <div class="details">
+                    <h3>Ergonomic Office Chair</h3>
+                    <p>Color: Gray | Material: Mesh</p>
+                    <p class="price"> ₹2,499.00 </p>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="1" readonly>
+                    <button>+</button>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            
+            <p style="text-align: right; margin-top: 20px;"><a href="#" style="color: #051df5; text-decoration: none;">&larr; Continue Shopping</a></p>
+
+        </div>
+        
+        <div class="summary">
+            <h2>Order Summary</h2>
+            <div class="summary-details">
+                <div><span>Subtotal (2 items):</span> <span> ₹4,498.00 </span></div>
+                <div><span>Shipping:</span> <span> ₹50.00</span></div>
+                <div><span>Tax (6%):</span> <span> ₹289.02</span></div>
+                <div class="total"><span>Estimated Total:</span> <span> ₹4,837.02</span></div>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+    </div>
+<footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+</body>
+</html>
