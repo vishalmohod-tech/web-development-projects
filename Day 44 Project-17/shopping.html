@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #353535;
+        }
+        header {
+            background-color: #145581;
+            color: white;
+            padding: 16px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .items{
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .item {
+            display: flex;
+            gap: 21px;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .item-image {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8em;
+            color: #555;
+            flex-shrink: 0; 
+        }
+
+        .details {
+            flex-grow: 1; /* Takes up remaining space */
+        }
+
+        .details h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+            color: #007bff;
+        }
+
+        .details p {
+            margin: 0 0 5px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+        
+        .details .price {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .quantity {
+            width: 120px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .quantity input {
+            width: 40px;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 0 5px;
+        }
+
+        .remove-btn {
+            background: none;
+            border: none;
+            color: #e21126;
+            cursor: pointer;
+            font-size: 0.9em;
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+
+        /* Cart Summary Section */
+        .summary {
+            flex: 1; /* Takes up 1/3 of the space */
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            position: sticky; /* Makes it stick when scrolling */
+            top: 20px; /* Distance from the top */
+        }
+
+        .summary-details {
+            margin-bottom: 20px;
+        }
+
+        .summary-details div {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .summary-details .total {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #28a745;
+            border-bottom: none;
+            padding-top: 15px;
+        }
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            text-decoration: none; /* If it were an anchor tag */
+            transition: background-color 0.3s;
+        }
+
+        .checkout-btn:hover {
+            background-color: #0056b3;
+        }
+     </style>
+</head>
+<body>
+     <header>
+        <h1>🛒 Your Shopping Cart</h1>
+    </header>
+
+    <div class="container">
+        
+        <div class="items">
+            <h2>Items in Cart (2)</h2>
+
+            <div class="item">
+                <div class="item-image">Image Here</div>
+                <div class="details">
+                    <h3>Premium Wireless Headphones</h3>
+                    <p>Color: Black | Model: X-2000</p>
+                    <p class="price"> ₹1,999.00 </p>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="1" readonly>
+                    <button>+</button>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+
+            <div class="item">
+                <div class="item-image">Image Here</div>
+                <div class="details">
+                    <h3>Ergonomic Office Chair</h3>
+                    <p>Color: Gray | Material: Mesh</p>
+                    <p class="price"> ₹2,499.00 </p>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1" min="1" readonly>
+                    <button>+</button>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            
+            <p style="text-align: right; margin-top: 20px;"><a href="#" style="color: #051df5; text-decoration: none;">&larr; Continue Shopping</a></p>
+
+        </div>
+        
+        <div class="summary">
+            <h2>Order Summary</h2>
+            <div class="summary-details">
+                <div><span>Subtotal (2 items):</span> <span> ₹4,498.00 </span></div>
+                <div><span>Shipping:</span> <span> ₹50.00</span></div>
+                <div><span>Tax (6%):</span> <span> ₹289.02</span></div>
+                <div class="total"><span>Estimated Total:</span> <span> ₹4,837.02</span></div>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
