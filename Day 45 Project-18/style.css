@@ -1,0 +1,124 @@
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .mcontainer{
+             margin: 0;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #d6cece;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #e4e7e7;
+        }
+
+        .section h2 {
+            color: #5c5b5b;
+            font-size: 1.2em;
+            margin: 0 0 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        /* Form Group (Label + Input) */
+        .group {
+            margin-bottom: 15px;
+        }
+
+        .group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        /* Input and Select Styling */
+        .group input,
+        .group select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box; /* Important for padding/border calculation */
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .group input:focus,
+        .group select:focus {
+            border-color: #034ff3;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+        }
+        
+        /* Grid Layout for Row-based fields (e.g., city/state) */
+        .row-group {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .row-group .form-group {
+            flex: 1; /* Makes the groups share space equally */
+        }
+
+        /* Payment Card Specific Inputs (Card Number, CVV, Expiry) */
+        .card-row {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end; /* Aligns items at the bottom */
+        }
+
+        .card-row .form-group:nth-child(1) {
+            flex: 2; /* Card number takes up more space */
+        }
+        
+        .card-row .form-group:nth-child(2),
+        .card-row .form-group:nth-child(3) {
+            flex: 1; /* Expiry and CVV share remaining space */
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 30px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }

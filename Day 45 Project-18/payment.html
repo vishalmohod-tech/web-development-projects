@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Check UI</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mcontainer">
+   
+     <div class="container">
+        <h1>Secure Checkout 🔒</h1>
+
+        <form action="#" method="post">
+
+            <div class="section">
+                <h2>1. Contact Information</h2>
+                <div class="group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+                </div>
+                <div class="group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 9876543210">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. Shipping Address</h2>
+                <div class="row-group">
+                    <div class="group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" required>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="address">Address Line 1</label>
+                    <input type="text" id="address" name="address" placeholder="Street road" required>
+                </div>
+                <div class="group">
+                    <label for="address">Address Line 2</label>
+                    <input type="text" id="address" name="address" placeholder="Landmark" required>
+                </div>
+                <div class="row-group">
+                    <div class="group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="group">
+                        <label for="zip">ZIP Code</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="country">State</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select a State</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="TL">Telangana</option>
+                        <option value="GJ">Gujrat</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. Payment Details</h2>
+                <div class="group">
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cname" required>
+                </div>
+                
+                <div class="card-row">
+                    <div class="group">
+                        <label for="cnum">Card Number</label>
+                        <input type="text" id="cnum" name="cnum" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+                    <div class="group">
+                        <label for="exp">Expiry (MM/YY)</label>
+                        <input type="text" id="exp" name="exp" placeholder="MM/YY" required>
+                    </div>
+                    <div class="group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Complete Order</button>
+
+        </form>
+    </div>
+         
+    </div>
+</body>
+</html>
