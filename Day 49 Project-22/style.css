@@ -1,0 +1,94 @@
+  body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f2f3f7;
+      display: flex;
+      height: 100vh;
+    }
+    .side {
+      width: 280px;
+      background: #265e9e;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+    .side h2 {
+      padding: 20px;
+      margin: 0;
+      background: #204866;
+    }
+    .list {
+      flex: 1;
+      overflow-y: auto;
+    }
+    .item {
+      padding: 15px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      cursor: pointer;
+    }
+    .item1{
+        background-color: #6c97c9;
+    }
+    .item:hover {
+      background: #353b48;
+    }
+    .area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #ecf0f1;
+    }
+    .header {
+      background: #c8eceb;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    .msgs {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .msg {
+      max-width: 70%;
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      clear: both;
+    }
+    .sent {
+      background: #5a8099;
+      color: white;
+      float: right;
+      border-bottom-right-radius: 2px;
+    }
+    .rec{
+      background: #fff;
+      border: 1px solid #ddd;
+      float: left;
+      border-bottom-left-radius: 2px;
+    }
+    .inp {
+      display: flex;
+      padding: 15px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+    }
+    .inp input {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+    }
+    .inp button {
+      margin-left: 10px;
+      background: #4cafef;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
