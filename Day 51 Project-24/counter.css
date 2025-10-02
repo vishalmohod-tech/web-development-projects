@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+body.dark .container {
+  background-color: #444;
+}
+
+.counter-display {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+.buttons button {
+  font-size: 1.2rem;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  margin-top: 20px;
+}
+
+.instructions {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: gray;
+}
