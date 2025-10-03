@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Smart Invoice Generator</h1>
+
+    <form id="invoiceForm">
+      <label>Client Name: <input type="text" id="clientName" required></label>
+      <label>Invoice Number: <input type="text" id="invoiceNumber" required></label>
+      <label>Tax (%): <input type="number" id="tax" value="6" min="0"></label>
+      <label>Discount (%): <input type="number" id="discount" value="0" min="0"></label>
+
+      <h3>Items</h3>
+      <div id="itemsContainer">
+        <div class="item">
+          <input type="text" placeholder="Item Name" class="itemName" required>
+          <input type="number" placeholder="Quantity" class="itemQty" min="1">
+          <input type="number" placeholder="Price" class="itemPrice" min="0">
+          <button type="button" class="removeItem">❌</button>
+        </div>
+      </div>
+
+      <button type="button" id="addItem">+ Add Item</button>
+      <button type="submit">Generate Invoice</button>
+    </form>
+
+    <div id="invoicePreview"></div>
+  </div>
+  <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+<script src="invoice.js"></script>
+</body>
+</html>
