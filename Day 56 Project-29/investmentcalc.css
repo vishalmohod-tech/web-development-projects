@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  text-align: center;
+  padding: 20px;
+}
+
+.calculator label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding: 5px;
+  margin-left: 5px;
+  width: 100px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.output {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+#calculate:hover{
+  background-color: rgb(180, 65, 184);
+}
+
+.output p:hover{
+  color: rgb(160, 79, 185);
+  font-weight: bold;
+}
+
+footer{
+  margin-top: 100px;
+  background-color: rgb(119, 148, 143);
+}
