@@ -1,0 +1,116 @@
+  body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #d68bdd, #ec7f26);
+       
+    }
+
+    .xcontainer {
+ display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        margin: 0;
+    }
+
+    .container {
+        background: #fff;
+        padding: 30px 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        width: 420px;
+        animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    .password-box {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    input[type="password"], input[type="text"] {
+        width: 80%;
+        padding: 12px 45px 12px 15px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        outline: none;
+        transition: border 0.3s;
+    }
+
+    input:focus {
+        border-color: #4CAF50;
+
+    }
+
+    .toggle-btn {
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #555;
+        user-select: none;
+    }
+
+    .strength-bar {
+        height: 12px;
+        border-radius: 10px;
+        background: #ddd;
+        margin: 15px 0;
+        overflow: hidden;
+    }
+
+    .strength-bar div {
+        height: 100%;
+        width: 0%;
+        transition: width 0.4s, background 0.4s;
+    }
+
+    .strength-label {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .requirements {
+        margin: 15px 0;
+        font-size: 14px;
+        color: #555;
+        padding-left: 15px;
+    }
+
+    .requirements li {
+        margin-bottom: 8px;
+    }
+
+    .requirements li.valid {
+        color: #4CAF50;
+        font-weight: bold;
+    }
+
+    /* Tooltip */
+    .tooltip {
+        text-align: center;
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 13px;
+        margin-top: 15px;
+        color: #333;
+    }
+    footer{
+          text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #da46cd;
+    }
