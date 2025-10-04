@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Wise Form</title>
+    <link rel="stylesheet" href="stepform.css">
+</head>
+<body>
+
+     <div class="mcontainer">
+ <div class="container">
+        <h2>📋Multi-step Form Wizard✍️</h2>
+
+        <div class="progress">
+            <span id="bar1" class="active"></span>
+            <span id="bar2"></span>
+            <span id="bar3"></span>
+            <span id="bar4"></span>
+        </div>
+
+        <div class="step active" id="step1">
+            <h3>Step 1: Personal Info</h3>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <div class="buttons">
+                <span></span>
+                <button onclick="nextStep(1)">Next</button>
+            </div>
+        </div>
+
+        <div class="step" id="step2">
+            <h3>Step 2: Address</h3>
+            <input type="text" id="address" placeholder="Address">
+            <input type="text" id="city" placeholder="City">
+            <div class="buttons">
+                <button onclick="prevStep(2)">Previous</button>
+                <button onclick="nextStep(2)">Next</button>
+            </div>
+        </div>
+        <div class="step" id="step3">
+            <h3>Step 3: Account Setup</h3>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <div class="buttons">
+                <button onclick="prevStep(3)">Previous</button>
+                <button onclick="nextStep(3)">Next</button>
+            </div>
+        </div>
+        <div class="step" id="step4">
+            <h3>✅ Summary</h3>
+            <div class="summary" id="summaryBox"></div>
+            <div class="buttons">
+                <button onclick="prevStep(4)">Previous</button>
+                <button onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+
+    <script src="stepform.js"></script>
+</body>
+</html>
