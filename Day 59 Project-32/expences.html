@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense & Budget Tracker</title>
+    <link rel="stylesheet" href="expences.css">
+</head>
+<body>
+    <div class="mcontainer">
+        <div class="container">
+    <h1>Expense Tracker / Budget Planner</h1>
+    
+    <div class="balance-section">
+      <h2>Balance: ₹<span id="balance">0</span></h2>
+      <div class="income-expense">
+        <p>Income: ₹<span id="income">0</span></p>
+        <p>Expenses: ₹<span id="expenses">0</span></p>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <input type="text" id="titleInput" placeholder="Title (e.g., Salary, Rent)">
+      <input type="number" id="amountInput" placeholder="Amount">
+      <select id="typeSelect">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="transactionList"></ul>
+  </div>
+    </div>
+
+    
+     <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+
+
+  <script src="expences.js"></script>
+</body>
+</html>
