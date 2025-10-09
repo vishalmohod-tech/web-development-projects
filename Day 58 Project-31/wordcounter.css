@@ -1,0 +1,71 @@
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(130deg, #f72aa8, #6a2ca8);
+        
+    }
+    .mcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        margin: 0;
+    }
+
+    .container {
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        width: 500px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        outline: none;
+        resize: none;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 12px;
+        background: #ddd;
+        border-radius: 8px;
+        margin: 12px 0;
+        overflow: hidden;
+    }
+
+    .progress-bar div {
+        height: 100%;
+        width: 0%;
+        background: green;
+        transition: 0.3s;
+    }
+     footer{
+          text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #6db8b1;
+    }
