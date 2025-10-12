@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard</title>
+    <link rel="stylesheet" href="flashcard.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+       <h1>🧠 Flashcard Study App </h1>
+       <button id="addCardBtn" class="btn primary">+ Add Flashcard</button>
+     </header>
+     <main>
+       <div id="flashcardList" class="flashcard-list"> </div>
+     </main>
+     <div class="modal" id="modal">
+       <div class="modal-content">
+       <h2>Add a New Flashcard</h2>
+          <input type="text" id="question" placeholder="Enter your question..." />
+     <input type="text" id="answer" placeholder="Enter the answer..." />
+          <div class="modal-actions">
+           <button id="saveCardBtn" class="btn success">Save</button>
+           <button id="closeModalBtn" class="btn danger">Cancel</button>
+         </div>
+       </div>
+     </div>
+    </div>
+
+      <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+
+  <script src="flashcard.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #9bb5fe, rgb(252, 70, 221) ,  #a2a84d);
+  min-height: 100vh;
+ 
+}
+.container{
+     display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+   justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+   color: #fff;
+}
+
+h1 {
+   font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+   cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+   background: #6654eb;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #20384d;
+}
+
+.btn.success {
+  background: #00b894;
+  color: #fff;
+}
+
+.btn.danger {
+  background: #d63031;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.flashcard-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.flashcard {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+  color: #2d3436;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  perspective: 1000px;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+.flashcard:hover {
+  transform: scale(1.03);
+}
+
+.flashcard-inner {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flashcard.flip .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.flashcard-front {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.flashcard-back {
+  background: #6c5ce7;
+  color: #fff;
+  transform: rotateY(180deg);
+ 
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff7675;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #d63031;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flashcard-list {
+    padding: 20px;
+  }
+}
+
+    footer{
+          text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #6db8b2;
+     position: fixed;
+  bottom: 0;
+ width: 100%;
+     }
