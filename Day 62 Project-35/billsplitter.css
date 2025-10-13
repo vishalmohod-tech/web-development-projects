@@ -1,0 +1,93 @@
+    body {
+      background: linear-gradient(135deg, #1b333d, #304c55, #2c5364);
+      min-height: 100vh;
+     
+      font-family: "Poppins", sans-serif;
+    }
+    .mcontainer{
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      color: #fff;
+    }
+    .container {
+      width: 420px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      padding: 25px 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00c9ff;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+    }
+    input::placeholder { color: #bbb; }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #00c9ff;
+      border: none;
+      border-radius: 8px;
+      color: #00334e;
+      font-weight: 600;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #5ee7df; }
+    .list {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 10px;
+      max-height: 180px;
+      overflow-y: auto;
+      margin-top: 15px;
+    }
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .list-item:last-child { border-bottom: none; }
+    .list-item span { font-size: 15px; }
+    .list-item button {
+      background: transparent;
+      color: #ff6b6b;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .result {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 20px;
+      display: none;
+    }
+    .result p { margin: 5px 0; font-size: 15px; }
+    .reset-btn {
+      background: #ff6b6b;
+      margin-top: 10px;
+    }
+
+    footer{
+         text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #5c96b6;
+    }
