@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Vault</title>
+    <link rel="stylesheet" href="vault.css">
+</head>
+<body>
+     <div class="sidebar">
+    <h2>Vault🗂️</h2>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search notes..." />
+    </div>
+    <div class="note-list" id="noteList"></div>
+    <button class="add-btn" onclick="createNote()">+ New Note</button>
+  </div>
+
+  <div class="editor">
+    <input type="text" id="noteTitle" placeholder="Note Title" />
+    <textarea id="noteContent" placeholder="Start writing your thoughts..."></textarea>
+
+    <div class="bottom-buttons">
+      <button onclick="saveNote()">💾 Save</button>
+      <button class="delete" onclick="deleteNote()">🗑 Delete</button>
+    </div>
+  </div>
+
+  <script src="vault.js"></script>
+</body>
+</html>
