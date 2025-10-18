@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CRM/client Manager</title>
+    <link rel="stylesheet" href="crm.css">
+</head>
+<body>
+   
+
+        <h1>💼 Mini CRM / Client Manager</h1>
+  <div class="container">
+    <div class="add-client">
+      <input type="text" id="nameInput" placeholder="Client Name">
+      <input type="email" id="emailInput" placeholder="Email">
+      <input type="text" id="phoneInput" placeholder="Phone">
+      <select id="statusInput">
+        <option value="Lead">Lead</option>
+        <option value="Active">Active</option>
+        <option value="Closed">Closed</option>
+      </select>
+      <button id="addClientBtn">Add Client</button>
+    </div>
+
+    <div class="filters">
+      <select id="filterStatus">
+        <option value="All">All Status</option>
+        <option value="Lead">Lead</option>
+        <option value="Active">Active</option>
+        <option value="Closed">Closed</option>
+      </select>
+      <span id="stats"></span>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="clientTable"></tbody>
+    </table>
+  </div>
+
+     <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+
+
+<script src="crm.js"></script>
+</body>
+</html>

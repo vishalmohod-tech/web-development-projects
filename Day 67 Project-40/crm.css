@@ -1,0 +1,110 @@
+    * {
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    body { 
+        background: #f0f2f5; 
+         margin: 0; 
+         padding: 20px;
+         }
+    h1 { 
+        text-align: center; 
+        color: #2575fc;
+        margin-bottom: 20px;
+     }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .add-client, .filters {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .add-client input, .filters select {
+      padding: 10px;
+      border: 2px solid #2575fc;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .add-client button {
+      background: #2575fc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .add-client button:hover {
+         background: #1b5cd7;
+         }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+         background: #2575fc; 
+         color: white; 
+        }
+    td button {
+      padding: 5px 8px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .edit-btn {
+        background: #f1c40f; 
+        color: white;
+     }
+    .delete-btn {
+         background: #e74c3c; 
+         color: white;
+         }
+
+    .status {
+      padding: 4px 8px;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .Lead {
+         background: #f39c12; 
+        }
+    .Active {
+         background: #27ae60;
+         }
+    .Closed { 
+        background: #7f8c8d; 
+    }
+
+    footer{
+         text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #5c96b6;
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+    }
