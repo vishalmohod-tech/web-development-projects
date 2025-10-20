@@ -39,7 +39,8 @@
 const shareAppBtn = document.getElementById("shareAppBtn");
 
 shareAppBtn.addEventListener("click", () => {
-  const projectLink = "https://vishal-tech.github.io/web-development-projects/Day 70 Project-43/wish.html/"; 
+  const projectLink = "  https://vishalmohod-tech.github.io/web-development-projects/Day%2070%20Project-43/wish.html"; 
+
 
   navigator.clipboard.writeText(projectLink)
     .then(() => {
@@ -53,3 +54,4 @@ shareAppBtn.addEventListener("click", () => {
     script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
 
     document.body.appendChild(script);
+
