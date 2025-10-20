@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali Greeting Card Generator</title>
+    <link rel="stylesheet" href="wish.css">
+</head>
+<body>
+    <h1>🎇 Diwali Greeting Card Generator</h1>
+
+  <div class="container">
+    <div class="form-section">
+      <label>Your Name:</label>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+
+      <label>Your Diwali Message:</label>
+      <textarea id="messageInput" rows="3" placeholder="Enter your message"></textarea>
+
+      <label>Choose Theme Color:</label>
+      <select id="colorSelect">
+        <option value="#ff6600">Golden Orange</option>
+        <option value="#ff0099">Magenta Pink</option>
+        <option value="#00ccff">Cool Blue</option>
+        <option value="#33ff77">Neon Green</option>
+      </select>
+
+      <label>Background Pattern:</label>
+      <select id="bgSelect">
+        <option value="linear-gradient(135deg, #330066, #000)">Midnight Purple</option>
+        <option value="linear-gradient(135deg, #002244, #000)">Deep Blue</option>
+        <option value="linear-gradient(135deg, #4b004b, #000)">Royal Violet</option>
+        <option value="linear-gradient(135deg, #400000, #000)">Festive Red</option>
+      </select>
+
+      <button id="generateBtn">✨ Generate Card</button>
+      <button id="downloadBtn" style="margin-top: 10px;">📸 Download Card</button>
+  
+
+    </div>
+
+    <div class="card-preview" id="card">
+      <h2>Happy Diwali 🪔</h2>
+      <div class="diya"><div class="flame"></div></div>
+      <p id="greetingText">May your Diwali be filled with light, laughter, and joy!</p>
+      <div class="from-text" id="fromText">— From Vishal</div>
+    </div>
+  </div>
+
+      <button id="shareAppBtn">
+  🔗 Share
+</button>
+
+    <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+
+
+<script src="wish.js"></script>
+
+</body>
+</html>
