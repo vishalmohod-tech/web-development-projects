@@ -1,0 +1,116 @@
+
+  body {
+    background: linear-gradient(135deg, #e0f2fe, #bfdbfe);
+    min-height: 100vh;
+    padding: 20px;
+    font-family: "Poppins", sans-serif; 
+  }
+
+  h1 {
+      text-align: center;
+      color: #051541;
+       margin-bottom: 22px;
+  }
+  .container {
+     max-width: 900px;
+    margin: auto;
+     background: #ffffff;
+    border-radius: 16px;
+    padding: 26px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .form input, select {
+    padding: 10px;
+    border: 2px solid #10286b;
+    border-radius: 8px;
+    width: 180px;
+  }
+  .form button {
+     background: #1e3a8a;
+    color: #fff;
+     border: none;
+    padding: 10px 25px;
+     border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s; 
+  }
+  .form button:hover { 
+    background: #1776c4;
+ }
+
+  .filter-section {
+     display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .filter-section input, .filter-section select {
+    border: 2px solid #2961da;
+    border-radius: 6px;
+    padding: 8px 12px;
+  }
+
+  table {
+     width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border-bottom: 1px solid #ddd;
+     padding: 12px;
+    text-align: left;
+  }
+  th { 
+    background: #eff6ff; 
+    color: #1e3a8a;
+      }
+  tr:hover {  
+        background: #f9fafb;
+       }
+
+  .actions button {
+    margin-right: 6px;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .edit { 
+      background: #3b82f6; 
+        color: white; 
+     }
+  .delete { 
+      background: #ef4444; 
+      
+       color: white;
+     }
+
+  @media(max-width: 700px){
+    table { 
+          font-size: 13px;
+          }
+    .form {
+             flex-direction: column; 
+             align-items: center;
+               }
+  }
+
+
+      footer {
+       
+       text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #285e7a;
+      width: 100%;
+          position: fixed;
+  bottom: 0;
+  margin: 0;
+    }
