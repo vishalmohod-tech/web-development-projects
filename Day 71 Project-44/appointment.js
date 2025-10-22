@@ -20,7 +20,7 @@ function renderAppointments() {
       row.innerHTML = `
         <td>${index + 1}</td>
         <td>${a.name}</td>
-        <td>${a.email}</td>
+        <td>${a.phone}</td>
         <td>${a.service}</td>
         <td>${a.date}</td>
         <td>${a.time}</td>
@@ -37,19 +37,19 @@ function renderAppointments() {
 
 function addAppt() {
   const name = document.getElementById("clientName").value.trim();
-  const email = document.getElementById("clientEmail").value.trim();
+  const phone = document.getElementById("phone").value;
   const date = document.getElementById("apptDate").value;
   const time = document.getElementById("apptTime").value;
   const service = document.getElementById("serviceType").value;
 
-  if (!name || !email || !date || !time || !service) {
+  if (!name || !phone || !date || !time || !service) {
     alert("Please fill all fields!");
     return;
   }
 
-  appointments.push({ name, email, date, time, service });
+  appointments.push({ name, phone, date, time, service });
   document.getElementById("clientName").value = "";
-  document.getElementById("clientEmail").value = "";
+  document.getElementById("phone").value; = "";
   document.getElementById("apptDate").value = "";
   document.getElementById("apptTime").value = "";
   document.getElementById("serviceType").value = "";
@@ -78,5 +78,6 @@ function deleteAppt(index) {
 document.getElementById("addAppt").addEventListener("click", addAppt);
 document.getElementById("searchBox").addEventListener("input", renderAppointments);
 document.getElementById("filterService").addEventListener("change", renderAppointments);
+
 
 renderAppointments();
