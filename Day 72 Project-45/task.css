@@ -1,0 +1,157 @@
+ * { 
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif; 
+    margin:0; 
+    padding:0;
+}
+  body { 
+    
+    background:#e2e4e9;
+     min-height:100vh; 
+     padding:20px;
+    }
+  h1 { 
+    text-align:center; 
+    color:#2e68d3; 
+    margin-bottom:20px; 
+}
+
+  .top-bar {
+    display:flex; 
+    gap:10px; 
+    flex-wrap:wrap; 
+    justify-content:center;
+     margin-bottom:20px;
+  }
+
+  .top-bar input, .top-bar select {
+    padding:10px; 
+    border:2px solid #2d64ca;
+     border-radius:8px;
+     min-width:180px;
+  }
+
+  .top-bar button {
+    background:#2b61c7;
+     color:white;
+     border:none; 
+     padding:10px 20px;
+
+    border-radius:8px; 
+    cursor:pointer;
+     transition:0.3s;
+  }
+  .top-bar button:hover { 
+    background:#1f468d; 
+}
+
+  .board {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:15px;
+  }
+
+  .column {
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .column h2 {
+    margin-bottom:10px; 
+    color:#336dda; 
+    display:flex;
+     justify-content:space-between;
+    align-items:center;
+  }
+
+  .task {
+    background:#eceff3;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.05);
+    transition:0.3s;
+  }
+  .task:hover { 
+    transform:translateY(-3px);
+ }
+
+  .task-title { 
+    font-weight:bold;
+     color:#333; 
+}
+  .task-desc { 
+    font-size:14px; 
+    color:#494848;
+     margin:5px 0; 
+}
+  .task-footer {
+    display:flex;
+     justify-content:space-between;
+     align-items:center;
+  }
+
+  .priority {
+    padding:3px 8px;
+     border-radius:8px; 
+    font-size:12px; 
+    color:white; 
+    font-weight:bold;
+  }
+  .High {
+    
+    background:#dd4a3a; 
+
+    }
+  .Medium {
+    
+    background:#eec213; 
+    
+     color:#000;
+
+}
+  .Low {
+    
+    background:#2ab966;
+
+    }
+
+  .actions button {
+    border:none;
+    padding:4px 6px;
+    border-radius:6px;
+    font-size:14px;
+    cursor:pointer;
+    color:white;
+  }
+  .edit { 
+    background:#f39c12;
+ }
+  .delete { 
+    background:#e74c3c; 
+}
+  .move { 
+    background:#3498db; 
+}
+
+  @media(max-width:600px){
+    .top-bar {
+         flex-direction:column;
+          align-items:center; 
+        }
+  }
+
+
+  
+      footer {
+       
+       text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #285e7a;
+      width: 100%;
+          position: fixed;
+  bottom: 0;
+  margin: 0;
+    }
