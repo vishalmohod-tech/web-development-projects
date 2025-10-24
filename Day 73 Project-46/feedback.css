@@ -1,0 +1,128 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 244, 179);
+    color: #333;
+}
+
+header {
+    background-color: rgb(156, 39, 147);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Feedback Form Styling */
+.feedback-form-container {
+    flex: 1;
+    background-color:rgb(196, 191, 123);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content; /* Adjusts height to content */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+button[type="submit"] {
+    background-color:  rgb(156, 39, 147);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.reviews-display-container {
+    flex: 1;
+    background-color: rgb(196, 191, 123);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.review-card h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: rgb(156, 39, 147);
+}
+
+.review-card p {
+    margin: 5px 0;
+}
+
+.review-card .rating {
+    font-weight: bold;
+    color: #ffc107; 
+}
+
+.no-reviews {
+    text-align: center;
+    color: rgb(71, 70, 70);
+    padding: 20px;
+    border: 1px dashed #b89e9e;
+    border-radius: 4px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        margin: 20px;
+    }
+}
+
+      footer {
+   
+       text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #395c6d;
+      width: 100%;
+          position: fixed;
+  bottom: 0;
+  margin: 0;
+    }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Collector</title>
+</head><link rel="stylesheet" href="feedback.css">
+<body>
+    
+    
+    <header>
+        <h1>Product Feedback Manager 📝</h1>
+    </header>
+
+    <main>
+        <section class="feedback-form-container">
+            <h2>Submit Your Review</h2>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="reviewerName">Your Name:</label>
+                    <input type="text" id="reviewerName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rating (1-5):</label>
+                    <input type="number" id="rating" min="1" max="5" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewText">Your Feedback:</label>
+                    <textarea id="reviewText" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section class="reviews-display-container">
+            <h2>Recent Reviews</h2>
+            <div id="reviewsList" class="reviews-list">
+                <p class="no-reviews">No reviews submitted yet. Be the first! 🚀</p>
+            </div>
+        </section>
+    </main>
+
+    
+<footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+
+
+<script src="feedback.js"></script>
+</body>
+</html>
