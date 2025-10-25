@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Organiser</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    
+     <header>
+     <h1>📁 Mini File Organizer</h1>
+    <div class="controls">
+        <button class="btn btn-ghost small" id="clearAll">Clear All</button>
+     </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+       <h3>Add / Edit File</h3>
+      <label>File Name</label>
+      <input type="text" id="fileName" placeholder="e.g., Project.docx">
+      <label>File Type</label>
+      <select id="fileType">
+          <option value="Document">Document</option>
+        <option value="Image">Image</option>
+        <option value="Video">Video</option>
+        <option value="Audio">Audio</option>
+        <option value="Other">Other</option>
+       </select>
+      <label>Category (optional)</label>
+      <input type="text" id="category" placeholder="e.g., Work, Personal">
+       <div style="display:flex;gap:8px;">
+        <button class="btn btn-primary" id="saveBtn">Save</button>
+         <button class="btn btn-ghost" id="resetBtn">Reset</button>
+      </div>
+     </section>
+
+    <section class="card">
+       <h3>Your Files</h3>
+      <div style="display:flex;gap:8px;margin-bottom:10px;">
+         <input type="text" id="search" placeholder="Search by name or category" style="flex:1;padding:8px;border-radius:6px;border:1px solid #e2e8f0;">
+         <select id="filter">
+            <option value="all">All Types</option>
+          <option value="Document">Document</option>
+           <option value="Image">Image</option>
+           <option value="Video">Video</option>
+          <option value="Audio">Audio</option>
+          <option value="Other">Other</option>
+         </select>
+      </div>
+       <div id="fileList"></div>
+    </section>
+  </main>
+
+
+  <footer>
+<div>Designed & Developed by Vishal-tech ✨</div>
+🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+</footer>
+
+<script src="file.js"></script>
+</body>
+</html>
