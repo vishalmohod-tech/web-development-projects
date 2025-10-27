@@ -1,0 +1,110 @@
+body {
+      background: #e2cae6;
+      margin: 0;
+      
+    }
+.mcontainer{
+display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+}
+    h1 {
+      text-align: center;
+      color: #292828;
+      margin-bottom: 20px;
+    }
+
+    .container {
+       display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1100px;
+      gap: 20px;
+    }
+
+     .form-container, .preview-container {
+      background: #ffffff;
+       border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+       padding: 20px;
+      flex: 1;
+      min-width: 320px;
+    }
+ 
+     .form-container h2, .preview-container h2 {
+       color: #444;
+      font-size: 20px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+       margin-bottom: 15px;
+    }
+
+     label {
+      font-size: 14px;
+      color: #333;
+       margin-bottom: 5px;
+      display: block;
+    }
+
+    input, textarea {
+       width: 90%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+       border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      background: #1b4777;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+    border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+
+    button:hover {
+      background: #0f8561;
+    }
+
+    .resume {
+      line-height: 1.6;
+    }
+
+    .resume h3 {
+      margin-top: 12px;
+       color: #0e5096;
+    }
+
+    .resume-section {
+       margin-bottom: 15px;
+    }
+
+    .actions {
+    text-align: center;
+      margin-top: 15px;
+    }
+
+  @media print {
+      body {
+        background: white;
+      }
+      .form-container, .actions, h1 {
+        display: none;
+      }
+      .preview-container {
+        box-shadow: none;
+        width: 100%;
+      }
+    }
+footer{
+
+    text-align: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background-color: #395c6d;
+     width: 100%;
+}

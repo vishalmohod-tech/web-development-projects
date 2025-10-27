@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder </title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    
+    <div class="mcontainer">
+
+         <h1>📝Resume Builder</h1>
+  <div class="container">
+
+    <div class="form-container">
+      <h2>Enter Your Details</h2>
+      
+      <label>Name:</label>
+         <input type="text" id="name" placeholder="Your full name">
+      
+      <label>Email:</label>
+       <input type="email" id="email" placeholder="example@email.com">
+      
+      <label>Phone:</label>
+       <input type="text" id="phone" placeholder="1234567890">
+      
+      <label>About You</label>
+       <textarea id="about" placeholder="A short summary about yourself..."></textarea>
+      
+          <label>Education</label>
+        <textarea id="education" placeholder="Your education background..."></textarea>
+      
+       <label>Experience</label>
+         <textarea id="experience" placeholder="Your work or project experience..."></textarea>
+      
+         <label>Skills</label>
+         <textarea id="skills" placeholder="HTML, CSS, JavaScript, etc."></textarea>
+      
+     
+
+
+      <h3>Extra Fields</h3>
+        <div id="extraFieldsContainer"></div>
+            <button type="button" onclick="addExtraField()">+ Add Extra Field</button>
+      
+      <div class="actions">
+          <button onclick="generateResume()">Generate Resume</button>
+          <button onclick="window.print()">Download / Print</button>
+      </div>
+    </div>
+
+    
+    <div class="preview-container">
+         <h2>Resume Preview</h2>
+       <div class="resume" id="resumeOutput">
+        <p style="color: gray;">Fill the form to see your resume preview...</p>
+         </div>
+    </div>
+  </div>
+        </div>
+
+
+     <footer>
+          <div>Designed & Developed by Vishal-tech ✨</div>
+           🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+     </footer>
+
+<script src="resume.js"></script>
+
+</body>
+</html>
