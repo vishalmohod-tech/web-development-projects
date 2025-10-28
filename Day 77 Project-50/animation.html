@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art and Animation</title>
+        <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+     <h1>🎨Art & Animation Creator</h1>
+  <div class="controls">
+     <label>Shape:
+      <select id="shape">
+            <option value="square">Square</option>
+            <option value="circle">Circle</option>
+           <option value="triangle">Triangle</option>
+       </select>
+    </label>
+        <label>Color: <input type="color" id="color" value="#3498db"></label>
+      <label>Size: <input type="number" id="size" value="100"></label> 
+      <label>Animation: 
+      <select id="animation">
+            <option value="none">None</option>
+          <option value="spin">Spin</option>
+        <option value="pulse">Pulse</option>
+        <option value="bounce">Bounce</option>
+      </select>
+    </label>
+     <button id="exportBtn">Export CSS</button>
+  </div>
+  <div class="preview">
+    <div id="art"></div>
+  </div>
+
+  <textarea id="cssOutput" readonly></textarea>
+
+       <footer>
+          <div>Designed & Developed by Vishal-tech ✨</div>
+           🔗<a href="https://github.com/vishalmohod-tech"> GitHub </a> • <a href="https://www.linkedin.com/in/vishalmohod-tech/"> LinkedIn </a>
+     </footer>
+
+     <script src="animation.js"></script>
+</body>
+</html>
