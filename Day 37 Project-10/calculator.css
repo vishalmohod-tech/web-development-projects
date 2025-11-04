@@ -1,0 +1,88 @@
+        body{
+            background-color: rgb(65, 88, 151);
+            margin: 0;
+            font-family:sans-serif;
+        }
+        h1{
+            text-align: center;
+            margin: 10px;
+        }
+        .container{
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .calculator{
+               background: #181616;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      width: 320px;
+      
+        }
+        .box{
+          
+            border-radius: 10px;
+
+               display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+
+        }
+        .box1{
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(40, 43, 43);
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            border: none;
+        }
+        .answer{
+            background-color: rgb(19, 48, 48);
+            text-align: right;
+            color: rgb(23, 179, 62); 
+            font-size: 2rem;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+        }
+        
+        .box1:hover{
+            transform: scale(1.05);
+            background-color:  rgb(51, 58, 58);;
+        }
+        .clr{
+            background-color: rgb(29, 143, 72);
+            
+        }
+        .clr:hover{
+            background-color: rgb(70, 197, 119);
+        }
+
+        .equal{
+            grid-column: span 2;
+            background-color: rgb(157, 39, 187);
+        }
+        .equal:hover{
+            background-color: rgb(187, 39, 175);
+        }
+
+        .zero{
+            grid-column: span 2;
+           
+        }
+          footer{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        background-color: rgb(43, 97, 104);
+       }
+  footer a{
+    text-decoration: none;
+    color: antiquewhite;
+  }
+        
