@@ -1525,3 +1525,168 @@ footer {
         line-height: 1.5 !important;
     }
 }
+/* Wedding Video Section */
+
+.wedding-video-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #fff5f8,
+        #ffe4ed,
+        #fff8f5
+    );
+}
+
+.wedding-video-section h2 {
+    font-size: 36px;
+    color: #8e2450;
+    margin: 15px 0;
+}
+
+.wedding-video-container {
+    max-width: 850px;
+    margin: 35px auto 20px;
+    padding: 10px;
+    background: white;
+    border: 2px solid #d6a34a;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(142, 36, 80, 0.15);
+}
+
+.wedding-video-container video {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    max-height: 500px;
+    background: #000;
+}
+
+.video-caption {
+    color: #8e2450;
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .wedding-video-section {
+        padding: 55px 15px;
+    }
+
+    .wedding-video-section h2 {
+        font-size: 27px;
+    }
+
+    .wedding-video-container {
+        padding: 6px;
+        margin-top: 25px;
+        border-radius: 12px;
+    }
+
+    .wedding-video-container video {
+        border-radius: 8px;
+    }
+
+}
+/* Elegant Royal Wedding Video */
+
+.wedding-video-section {
+    padding: 55px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fff7fa, #fceaf1);
+}
+
+.video-royal-frame {
+    width: 100%;
+    max-width: 850px;
+    padding: 5px;
+    border: 1px solid #d9a6b8;
+    border-radius: 18px;
+    background: linear-gradient(
+        135deg,
+        #f9e6ed,
+        #d8a6b8,
+        #fff4f7
+    );
+    box-shadow: 0 10px 30px rgba(142, 36, 80, 0.12);
+}
+
+.video-inner-frame {
+    overflow: hidden;
+    border: 2px solid #fff9fb;
+    border-radius: 14px;
+    line-height: 0;
+}
+
+.video-inner-frame video {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .wedding-video-section {
+        padding: 35px 15px;
+    }
+
+    .video-royal-frame {
+        padding: 4px;
+        border-radius: 14px;
+    }
+
+    .video-inner-frame {
+        border-radius: 11px;
+    }
+}
+
+
+
+.video-love-line {
+    text-align: center;
+    padding: 25px 30px 15px;
+    max-width: 750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.video-love-line h3 {
+    font-family: 'Georgia', serif;
+    font-size: 27px;
+    font-style: italic;
+    font-weight: normal;
+    color: #8e2450;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.video-love-line p {
+    font-size: 15px;
+    color: #946879;
+    line-height: 1.9;
+    padding: 0 12px;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+    .video-love-line {
+        padding: 20px 22px 10px;
+    }
+
+    .video-love-line h3 {
+        font-size: 21px;
+    }
+
+    .video-love-line p {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+}
